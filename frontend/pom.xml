@@ -22,6 +22,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <executions>
+                  <!--npm install dependencies-->
                     <execution>
                         <id>npm-install</id>
                         <phase>initialize</phase>
@@ -33,6 +34,7 @@
                             <commandlineArgs>install</commandlineArgs>
                         </configuration>
                     </execution>
+                  <!-- npm run build, output is located in /dit folder -->
                     <execution>
                         <id>build</id>
                         <phase>prepare-package</phase>
